@@ -11,16 +11,16 @@ export const Hero = () => {
         style={{ animationDelay: "0.1s" }}
       >
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-medium bg-white border-stone-200 text-stone-600">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-medium bg-white border-stone-200 text-stone-600">
           <span className="w-2 h-2 rounded-full bg-brand-lime animate-pulse" />
-          Premium Meta Assets & Solutions
+          Trusted by +1,750 businesses globally
         </div>
 
         {/* Headline */}
-        <h1 className="leading-[0.95] lg:text-7xl xl:text-8xl text-5xl font-medium text-stone-900 tracking-tighter">
-          Your Advertising,{" "}
+        <h1 className="leading-[1.05] lg:text-6xl xl:text-7xl text-4xl font-medium text-stone-900 tracking-tight">
+          Unlock Limitless Advertising with{" "}
           <span className="text-slate-950 relative inline-block">
-            Optimized
+            Whitelisted
             <svg
               className="absolute w-full h-3 -bottom-1 left-0 text-brand-lime -z-10"
               viewBox="0 0 100 10"
@@ -36,24 +36,22 @@ export const Hero = () => {
               />
             </svg>
           </span>{" "}
-          for Growth.
+          Agency Ad Accounts
         </h1>
 
         {/* Description */}
         <p className="leading-relaxed lg:text-xl text-lg font-normal text-stone-500 font-montserrat max-w-2xl">
-          We provide premium verified Meta assets—Business Managers, Ad
-          Accounts, Pages, and Profiles—that power your advertising campaigns.
-          No hassles, just results.
+          We Rent Meta, TikTok & Google Agency Ad Accounts
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 pt-2">
-          <GlassButton>Start Your Journey</GlassButton>
+          <GlassButton>Learn More</GlassButton>
           <button
             className="flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-stone-300 font-semibold text-stone-700 hover:bg-stone-200/50 transition-colors"
-            aria-label="View Our Assets"
+            aria-label="See Pricing"
           >
-            View Our Assets
+            See Pricing
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

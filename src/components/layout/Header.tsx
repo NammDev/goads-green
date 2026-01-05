@@ -215,31 +215,31 @@ const DropdownMenu = ({ item }: { item: NavItem }) => {
 
   return (
     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-      <div className="bg-stone-900 rounded-2xl shadow-2xl border border-stone-800 overflow-hidden min-w-[500px]">
+      <div className="bg-stone-900 rounded-2xl shadow-2xl border border-stone-800 overflow-hidden min-w-[640px]">
         {/* Columns */}
-        <div className="flex p-6 gap-8">
+        <div className="flex p-8 gap-12">
           {item.columns.map((column) => (
-            <div key={column.title} className="flex-1 min-w-[200px]">
-              <h3 className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-4">
+            <div key={column.title} className="flex-1 min-w-[260px]">
+              <h3 className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-5">
                 {column.title}
               </h3>
-              <ul className="space-y-1">
+              <ul className="space-y-2">
                 {column.items.map((subItem) => {
                   const IconComponent = subItem.icon;
                   return (
                     <li key={subItem.label}>
                       <Link
                         href={subItem.href}
-                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-stone-800 transition-colors group/item"
+                        className="flex items-start gap-4 p-3 rounded-xl hover:bg-stone-800 transition-colors group/item"
                       >
-                        <div className="w-8 h-8 rounded-lg bg-stone-800 group-hover/item:bg-stone-700 flex items-center justify-center shrink-0 mt-0.5">
-                          <IconComponent className="w-4 h-4 text-stone-400 group-hover/item:text-brand-lime transition-colors" />
+                        <div className="w-10 h-10 rounded-xl bg-stone-800 group-hover/item:bg-stone-700 flex items-center justify-center shrink-0">
+                          <IconComponent className="w-5 h-5 text-stone-400 group-hover/item:text-brand-lime transition-colors" />
                         </div>
-                        <div>
-                          <span className="block text-sm font-medium text-white group-hover/item:text-brand-lime transition-colors">
+                        <div className="min-w-0">
+                          <span className="block text-sm font-medium text-white group-hover/item:text-brand-lime transition-colors whitespace-nowrap">
                             {subItem.label}
                           </span>
-                          <span className="block text-xs text-stone-500 mt-0.5 leading-relaxed">
+                          <span className="block text-xs text-stone-500 mt-1 leading-relaxed">
                             {subItem.description}
                           </span>
                         </div>
